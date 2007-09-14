@@ -1,7 +1,7 @@
 Summary:        Real-time Game Server Status for FPP/FPS servers
 Name:           qstat
 Version:        2.11
-Release:        %mkrel 1
+Release:        %mkrel 2
 License:        Artistic
 Group:          Networking/Other
 URL:            http://sourceforge.net/projects/qstat/
@@ -21,7 +21,7 @@ Statistics may be output in a variety of form
 
 %build
 
-%configure2_5x
+%configure2_5x --program-suffix=-quake
 
 %make
 
@@ -30,16 +30,13 @@ Statistics may be output in a variety of form
 
 %makeinstall_std
 
-mv %{buildroot}%{_bindir}/qstat %{buildroot}%{_bindir}/qstat-quake
-
 rm -f template/Makefile*
 
 %clean
 [ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
-%defattr(0644,root,root,0755)
+%defattr(-,root,root)
 %doc CHANGES.txt COMPILE.txt ChangeLog contrib.cfg info/* qstatdoc.html template
-%attr(0644,root,root) %config(noreplace) %{_sysconfdir}/qstat.cfg
-%attr(0755,root,root) %{_bindir}/qstat-quake
-
+%config(noreplace) %{_sysconfdir}/qstat.cfg
+%{_bindir}/%{name}-quake
