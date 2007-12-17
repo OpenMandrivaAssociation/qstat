@@ -6,7 +6,6 @@ License:        Artistic
 Group:          Networking/Other
 URL:            http://sourceforge.net/projects/qstat/
 Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
-BuildRoot:      %{_tmppath}/%{name}-root
 
 %description
 QStat is a command-line utility for collecting real-time 
