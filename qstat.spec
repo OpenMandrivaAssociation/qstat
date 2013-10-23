@@ -1,7 +1,7 @@
 Summary:        Real-time Game Server Status for FPP/FPS servers
 Name:           qstat
 Version:        2.11
-Release:        9
+Release:        10
 License:        Artistic
 Group:          Networking/Other
 URL:            http://sourceforge.net/projects/qstat/
