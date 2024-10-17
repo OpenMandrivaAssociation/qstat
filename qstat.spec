@@ -4,7 +4,7 @@ Version:        2.11
 Release:        7
 License:        Artistic
 Group:          Networking/Other
-URL:            http://sourceforge.net/projects/qstat/
+URL:            https://sourceforge.net/projects/qstat/
 Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-root
 
