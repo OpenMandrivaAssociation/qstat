@@ -8,6 +8,11 @@ URL:            https://sourceforge.net/projects/qstat/
 Source:         http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.bz2
 BuildRoot:      %{_tmppath}/%{name}-root
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 QStat is a command-line utility for collecting real-time 
 statistics from on-line game servers. The games supported 
